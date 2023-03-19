@@ -11,9 +11,17 @@ public class Tar3 {
 		System.out.print("enter second number: ");
 		int b = sc.nextInt();
 		sc.close();
-		
+
 		int sum = a + b;
+		int dif = a - b;
+		int mul = a * b;
+		int div = a / b;
+		int rem = a % b; // use modulus remainder
+
 		System.out.println(a + " + " + b + " = " + sum);
+		System.out.println(a + " - " + b + " = " + dif);
+		System.out.println(a + " * " + b + " = " + mul);
+		System.out.println(a + " / " + b + " = " + div + " [" + rem + "]");
 
 	}
 

@@ -19,6 +19,9 @@ public class DataTypes {
 		System.out.println(x3);
 		System.out.println(x4);
 		
+		
+		// DO NOT READ THE CODE BELOW - IT IS FOR PEOPLE ASKING ABOUT STATIC
+		
 		// non static method call requires an object of this class
 		// create an object
 		DataTypes object = new DataTypes();

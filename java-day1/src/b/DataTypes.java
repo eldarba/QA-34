@@ -19,31 +19,39 @@ public class DataTypes {
 		System.out.println(x3);
 		System.out.println(x4);
 		
+		System.out.println("byte: " + Byte.MIN_VALUE + " to " + Byte.MAX_VALUE);
+		System.out.println("short: " + Short.MIN_VALUE + " to " + Short.MAX_VALUE);
+		System.out.println("int: " + Integer.MIN_VALUE + " to " + Integer.MAX_VALUE);
+		System.out.println("long: " + Long.MIN_VALUE + " to " + Long.MAX_VALUE);
 		
-		// DO NOT READ THE CODE BELOW - IT IS FOR PEOPLE ASKING ABOUT STATIC
+		System.out.println("==================================");
 		
-		// non static method call requires an object of this class
-		// create an object
-		DataTypes object = new DataTypes();
-		// call the method
-		int theSum = object.sum(2, 4);
-		System.out.println(theSum);
+		float f1 = 8.68F;
+		double f2 = 5.32;
 		
-		// static method call does not require an object of this class
-		theSum = sum2(3, 6);
-		System.out.println(theSum);
+		System.out.println(f1);
+		System.out.println(f2);
+		
+		System.out.println("==================================");
+		char c1 = 'A';
+		char c2 = 'א';
+		
+		System.out.println(c1);
+		System.out.println(c2);
+		
+		System.out.println("==================================");
+		boolean b1 = true;
+		boolean b2 = false;
+		boolean b3 = 100 > 50;
+		boolean b4 = 100 < 50;
+		
+		System.out.println(b1);
+		System.out.println(b2);
+		System.out.println(b3);
+		System.out.println(b4);
 		
 	}
 	
-	// non static method
-	public int sum(int a, int b) {
-		return a + b;
-	}
-	
-	// static method
-	public static int sum2(int a, int b) {
-		return a + b;
-	}
 	
 	
 }

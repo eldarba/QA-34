@@ -1,9 +1,19 @@
 package c;
 
+/*
+ * this is line 1
+ * this is line 2
+ * this is line 3
+ * 
+ * */
+
 import java.util.Scanner;
 
 public class Tar3 {
 
+	/**
+	 * this is an example of java operators
+	 * */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter first number: ");

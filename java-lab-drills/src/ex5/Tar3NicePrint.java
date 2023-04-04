@@ -2,7 +2,7 @@ package ex5;
 
 import java.util.Random;
 
-public class Tar3Simple {
+public class Tar3NicePrint {
 
 	/*
 	 * Create a new class that defines a random number with a value between 0-100.
@@ -20,14 +20,15 @@ public class Tar3Simple {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int val = random.nextInt(101);
-		System.out.println(val);
+		System.out.print(val + " is ");
 
 		if (val < 50) {
-			System.out.println("small");
+			System.out.print("small");
 		} else {
-			System.out.println("big");
+			System.out.print("big");
 		}
 
+		System.out.print(" and ");
 
 		if (val % 2 == 0) {
 			System.out.println("even");

@@ -20,15 +20,14 @@ public class Tar3 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int val = random.nextInt(101);
-		System.out.print(val + " is ");
+		System.out.println(val);
 
 		if (val < 50) {
-			System.out.print("small");
+			System.out.println("small");
 		} else {
-			System.out.print("big");
+			System.out.println("big");
 		}
 
-		System.out.print(" and ");
 
 		if (val % 2 == 0) {
 			System.out.println("even");

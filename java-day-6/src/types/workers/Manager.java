@@ -1,7 +1,7 @@
 package types.workers;
 
 public class Manager extends Worker {
-	
+
 	private String department;
 
 	public String getDepartment() {
@@ -11,10 +11,10 @@ public class Manager extends Worker {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	
+
 	// method override
 	public void work() {
-		System.out.println("manager " + getId() + " is working");
+		System.out.println("manager " + getId() + " is managing at the " + department + " department");
 	}
 
 }

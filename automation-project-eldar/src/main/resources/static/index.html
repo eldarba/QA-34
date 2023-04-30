@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Automation Project</title>
+</head>
+
+<body>
+    <h1>Eldar's Automation Project</h1>
+    <form action="next-page.html">
+        <input type="text" placeholder="name" name="user-name">
+        <br>
+        <input type="text" placeholder="email" name="user-email">
+        <br>
+
+        <fieldset>
+            <legend>Choose favorite language</legend>
+            <input id="eng" type="radio" name="language" value="english"> 
+            <label for="eng">English</label>
+            <br>
+            <input id="heb" type="radio" name="language" value="hebrew"> 
+            <label for="heb">Hebrew</label>
+            <br>
+            <input id="fre" type="radio" name="language" value="french"> 
+            <label for="fre">French</label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose Hobbies</legend>
+            <input id="movies" type="checkbox" name="hobbies" value="movies">
+            <label for="movies">Movies</label>
+            <input id="reading" type="checkbox" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input id="dogs" type="checkbox" name="hobbies" value="dogs">
+            <label for="dogs">Dogs</label>
+        </fieldset>
+
+        <br>
+        <label id="lb-cars" for="cars">Choose Car</label>
+        
+        <select name="car" id="cars">
+            <option value="">--- select one ---</option>
+            <option value="honda">Honda</option>
+            <option value="subaru">Subaru</option>
+            <option value="ferari">Ferari</option>
+            <option value="lada">Lada</option>
+        </select>
+        
+        <br>
+        <br>
+        <input type="submit" value="Send My Info">
+    </form>
+
+</body>
+
+</html>

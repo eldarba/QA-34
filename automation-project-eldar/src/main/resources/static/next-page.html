@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <p>we are processing your form information</p>
+
+    random number is:
+    <div id="random">0</div>
+    sum is:
+    <div id="sum">0</div>
+    <button onclick="rnd()">random number 0 - 100</button>
+
+    <script>
+        let sum = 0;
+        function rnd() {
+            let x = Math.floor(Math.random() * 101);
+            sum += x;
+            document.getElementById("random").innerHTML = x;
+            document.getElementById("sum").innerHTML = sum;
+        }
+    </script>
+
+    <hr>
+    <h3 id="asaf">Mirror input</h3>
+    <p>enter text on left and it will appear on right</p>
+    <input id="left" type="text" oninput="mirror()">
+    <input id="right" type="text">
+
+    <script>
+        function mirror() {
+            let leftInput = document.getElementById("left");
+            let rightInput = document.getElementById("right");
+            rightInput.value = leftInput.value;
+        }
+    </script>
+    <hr>
+
+    <div>
+        This page is part of my project <span class="note"> note:</span> should be tested with JUnit + Selenium
+    </div>
+
+    <div>
+        it demonstrate the use of <span class="tech">HTML</span> elements
+    </div>
+    <a href="index.html">back to main page</a>
+    <br>
+    <a href="http://www.google.com">go to google</a>
+    <br>
+    <a href="https://johnbryce.echo.timetoknow.com/">go to enabley</a>
+</body>
+
+</html>

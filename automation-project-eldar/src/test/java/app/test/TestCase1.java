@@ -1,6 +1,8 @@
 package app.test;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -22,7 +24,11 @@ class TestCase1 {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		driver = new ChromeDriver(); // open browser
+		TimeUnit.SECONDS.sleep(1);
 		driver.get(url); // go to our html file
+		TimeUnit.SECONDS.sleep(1);
+		driver.manage().window().fullscreen();
+		TimeUnit.SECONDS.sleep(1);
 	}
 
 	@AfterAll

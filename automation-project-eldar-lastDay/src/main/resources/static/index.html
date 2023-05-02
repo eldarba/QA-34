@@ -7,22 +7,23 @@
 </head>
 
 <body>
+    
     <h1>Eldar's Automation Project</h1>
     <form action="next-page.html">
-        <input type="text" placeholder="name" name="user-name">
+        <input type="text" placeholder="name" name="user-name" title="enter name">
         <br>
         <input type="text" placeholder="email" name="user-email">
         <br>
 
         <fieldset>
             <legend>Choose favorite language</legend>
-            <input id="eng" type="radio" name="language" value="english"> 
+            <input id="eng" type="radio" name="language" value="english">
             <label for="eng">English</label>
             <br>
-            <input id="heb" type="radio" name="language" value="hebrew"> 
+            <input id="heb" type="radio" name="language" value="hebrew">
             <label for="heb">Hebrew</label>
             <br>
-            <input id="fre" type="radio" name="language" value="french"> 
+            <input id="fre" type="radio" name="language" value="french">
             <label for="fre">French</label>
             <br>
         </fieldset>
@@ -39,7 +40,7 @@
 
         <br>
         <label id="lb-cars" for="cars">Choose Car</label>
-        
+
         <select name="car" id="cars">
             <option value="">--- select one ---</option>
             <option value="honda">Honda</option>
@@ -47,11 +48,14 @@
             <option value="ferari">Ferari</option>
             <option value="lada">Lada</option>
         </select>
-        
+
         <br>
         <br>
-        <input type="submit" value="Send My Info">
+        <input id="send" type="submit" value="Send My Info">
     </form>
+
+    <hr>
+    <img src="images/eclipse.jpg" alt="" onload="console.log('image loaded')">
 
 </body>
 

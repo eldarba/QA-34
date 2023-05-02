@@ -19,6 +19,14 @@ import org.openqa.selenium.support.ui.Select;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // enable order annotation on test methods
 class TestCase1 {
 
+	/*
+	 * https://www.selenium.dev/documentation/webdriver/getting_started/
+	 * install_drivers/
+	 */
+//	static {
+//		System.setProperty("webdriver.chrome.driver","C:\\eldar\\qa.34\\selenium\\drivers\\chromedriver.exe");
+//	}
+
 	private static WebDriver driver;
 	// access using http protocol (network)
 	private static String url = "http://127.0.0.1:5500/index.html";
@@ -109,7 +117,6 @@ class TestCase1 {
 		driver.navigate().to("http://127.0.0.1:5500/next-page.html");
 		Assertions.assertEquals("Welcome to Next Page", driver.getTitle(), "wrong title of next page");
 	}
-	
 
 	@Test
 	@Order(5)

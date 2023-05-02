@@ -110,7 +110,6 @@ class TestCase1 {
 		Assertions.assertEquals("Welcome to Next Page", driver.getTitle(), "wrong title of next page");
 	}
 	
-	// 
 
 	@Test
 	@Order(5)
